@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalorienzähler</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <form action="">
+        <label for="">Körpergröße in cm</label>
+        <input type="text" name="" id="grosse">
+        <label for="">Alter</label>
+        <input type="text" name="" id="alter">
+        <label for="">Gewicht in Kg</label>
+        <input type="text" name="" id="gewicht">
+        <section>
+            <label for="">Körperbau</label>
+            <div>
+                <label for="">Weiblich</label>
+                <input type="radio" name="geschlecht" id="weibi">
+            </div>
+            <div>
+                <label for="">Männlich</label>
+                <input type="radio" name="geschlecht" id="mannal">
+            </div>
+            <label for="">Arbeits- und Freizeitaktivität</label>
+            <select name="" id="aktiv">
+                <option value="0.95">schlafen</option>
+                <option value="1.2">Nur Sitzen oder Liegen</option>
+                <option value="1.5">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität in
+                    der Freizeit, z.B. Büroarbeit
+                </option>
+                <option value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B.
+                    Studierende, Fließbandarbeiter, Laboranten, Kraftfahrer
+                </option>
+                <option value="1.9">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner, Handwerker,
+                    Mechaniker, Hausfrauen
+                </option>
+                <option value="2.2">Körperlich anstrengende berufliche Arbeit
+                </option>
+            </select>
+        </section>
+        <input type="button" value="Submit" onclick="dickerWerdenUndZahlen()">
+    </form>
+    <table>
+        <thead>
+
+            <td></td>
+            <td>kcal</td>
+            <td>kJ</td>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>Grundumsatz</td>
+                <td id="grUmsCal"></td>
+                <td id="grUmsJul"></td>
+            </tr>
+
+            <tr>
+                <td>Gesamtumsatz</td>
+                <td id="gesamtUmsCal"></td>
+                <td id="gesamtUmsJul"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
